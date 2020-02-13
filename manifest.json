@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "xwTweaks",
+  "version": "1.0.0",
+  "description": "Quality-of-life improvements for New York Times crosswords and puzzles",
+  "icons": {
+    "16": "icons/xwt-16.png",
+    "32": "icons/xwt-32.png",
+    "48": "icons/xwt-48.png",
+    "96": "icons/xwt-96.png",
+    "128": "icons/xwt-128.png",
+    "256": "icons/xwt.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://nytimes.com/crosswords*",
+        "*://nytimes.com/puzzles*",
+        "*://www.nytimes.com/crosswords*",
+        "*://www.nytimes.com/puzzles*"
+      ],
+      "js": ["main.js"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+
+}

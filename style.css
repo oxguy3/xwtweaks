@@ -1,0 +1,67 @@
+/***** ALL PAGES *****/
+
+/* navbar games menu */
+.xwt-nav-games {
+  display: flex;
+  flex-direction: column;
+}
+.xwt-nav-dropdown {
+  display: none;
+  flex: 0 0 100%;
+  position: absolute;
+  top: 100%;
+  flex-direction: column;
+  z-index: 3;
+  background-color: #fff;
+  border: 1px solid #00000026;
+  border-left: none;
+  line-height: 1.25;
+}
+.xwt-nav-games:hover>.xwt-nav-dropdown {
+  display: flex;
+}
+.xwt-nav-dropdown>a {
+  color: inherit;
+  padding: 10px;
+  padding-left: 12px;
+  border-left: 1px solid #00000026;
+}
+.xwt-nav-dropdown>a:hover {
+  padding-left: 10px;
+  border-left: 3px solid #787886;
+}
+
+/***** HOME PAGE *****/
+
+/** make solve link look nice */
+.WordplayLink-wordplayLink--2f9O0:not(:first-of-type) {
+  margin-top: 5px;
+}
+.WordplayLink-wordplayLink--2f9O0:not(:first-of-type):after {
+  content: '';
+}
+@media (max-width: 800px) {
+  .xwt-hidden-sm {
+    display: none;
+  }
+}
+
+/** remove ugly "FREE" icon on logic puzzles */
+.PlayPage-logicIcon--3VP56:after {
+  display: none !important;
+}
+
+/***** SET PUZZLE *****/
+
+.set-board:not(.solved) .set-card:hover:not(.selected) {
+  background-color: #e6e6e6;
+  border-color: #959595;
+}
+.set-board:not(.solved) .set-card.selected {
+  background-color: #dcefff;
+  border-color: #a7d8ff;
+}
+.set-board:not(.solved) .set-card.selected:hover {
+  background-color: #c8e6ff;
+  border-color: #93cfff;
+}
