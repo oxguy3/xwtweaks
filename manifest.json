@@ -11,6 +11,11 @@
     "128": "icons/xwt-128.png",
     "256": "icons/xwt.svg"
   },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "xwtweaks@schiff.io"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
